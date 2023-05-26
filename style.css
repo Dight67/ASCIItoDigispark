@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: hsl(30, 50%, 50%);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(36, 37, 41);
+  align-items: center;
+}
+.title {
+  display: flex;
+  height: 1em;
+  margin: 0.2em 0 0.2em 0;
+  font-size: 5em;
+  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  width: 80em;
+}
+.textareas {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 2em 2em 2em 2em;
+}
+textarea {
+  background-color: rgb(58, 55, 51);
+  border: rgb(22, 21, 22) solid 0.25em;
+  border-radius: 0.5em;
+  max-width: 59em;
+  resize: none;
+  outline: none;
+  padding: 0.5em;
+}
+.text-0-span {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0.3em 0 0.3em 0.5em;
+}
+.text-1-span {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0.3em 0 0.3em 0.5em;
+}
+#text-0 {
+  width: 100%;
+  height: 5em;
+  min-height: 5em;
+  min-width: 59em;
+}
+#text-1 {
+  width: 100%;
+  height: 40em;
+  min-height: 5em;
+  min-width: 59em;
+}
+.controls {
+  align-items: center;
+  margin: 3.75em 2em 2em 2em;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 0.3em;
+}
+.button {
+  color: hsl(30, 50%, 50%);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2em;
+  background-color: rgb(58, 55, 51);
+  border: rgb(22, 21, 22) solid 0.1em;
+  height: 1.54em;
+  width: 12em;
+  padding: 0 0.5em 0 0.5em;
+  border-radius: 0.2em;
+  transition: 0.2s;
+}
+.button:hover {
+    background-color: rgb(78, 61, 38);
+    transition: 0.2s;
+}
