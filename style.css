@@ -37,7 +37,7 @@ body {
   color: hsl(30, 50%, 50%);
   font-family: "Courier New", Courier, monospace;
   background-color: rgb(58, 55, 51);
-  border: rgb(22, 21, 22) solid 0.2em;
+  border: rgb(22, 21, 22) solid 0.25em;
   height: 100%;
   width: 100%;
   padding-top: 0.35em;
