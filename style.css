@@ -39,7 +39,7 @@ body {
   background-color: rgb(58, 55, 51);
   border: rgb(22, 21, 22) solid 0.2em;
   height: 100%;
-  width: 24em;
+  width: 100%;
   padding-top: 0.35em;
   border-radius: 0.4em;
   transition: 0.2s;
