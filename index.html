@@ -8,18 +8,59 @@
   <body>
     <div class="title"><span>ASCII to Digispark</span></div>
     <div class="content">
-        
       <div class="textareas">
         <span class="text-0-span">ASCII text</span>
-        <textarea id="text-0" placeholder="text goes here..."></textarea>
+        <textarea id="text-0" placeholder="text goes here..." spellcheck="false"></textarea>
         <span class="text-1-span">Translated text</span>
-        <textarea id="text-1" placeholder="DigiKeyboard.sendKeyStroke(KEY_ );" readonly></textarea>
+        <textarea
+          id="text-1"
+          placeholder='To input one character: DigiKeyboard.sendKeyStroke(KEY_ );
+To input whole string:  DigiKeyboard.print("desired text");
+This app is focused on converting to single character
+
+To press 2 keys in order at one time use:
+DigiKeyboard.sendKeyStroke(2ND_KEY, 1ST_KEY);
+
+To press key with many modifiers at one time:
+DigiKeyboard.sendKeyStroke(KEY, MOD_KEY | MOD_KEY | MOD_KEY);'
+spellcheck="false"></textarea>
       </div>
 
       <div class="controls">
-        <button class="button" id="btn-translate">Translate</button>
-        <button class="button" id="btn-clear">Clear</button>
-        <button class="button" id="btn-auto-translate">Auto Translate</button>
+        <div class="buttons">
+          <button class="button" id="btn-output-edit-switch">Output edit: OFF</button>
+        </div>
+        <span class="cheatsheet-text">Cheatsheet</span>
+        <textarea class="cheatsheet" readonly>
+KEY_PRINTSCREEN   - Print Screen
+KEY_SCROLL_LOCK   - Scroll Lock
+KEY_PAUSE         - Pause
+KEY_INSERT        - Insert
+KEY_HOME          - Home
+KEY_PAGE_UP       - Page Up
+KEY_PAGE_DOWN     - Page Down
+KEY_DELETE        - Delete
+KEY_END           - End
+KEY_F1            - Func. Keys (1-12) 
+KEY_CAPS_LOCK     - Caps Lock
+KEY_TAB           - Tab
+KEY_ENTER         - Enter
+KEY_ESC           - Escape
+KEY_BACKSPACE     - Backspace
+KEY_UP            - Up Arrow
+KEY_DOWN          - Down Arrow
+KEY_RIGHT         - Right Arrow
+KEY_LEFT          - Left Arrow
+- Modifiers
+MOD_CONTROL_LEFT  - Left  Ctrl
+MOD_CONTROL_RIGHT - Right Ctrl
+MOD_ALT_LEFT      - Left  Alt
+MOD_ALT_RIGHT     - Right Alt
+MOD_SHIFT_LEFT    - Left  Shift
+MOD_SHIFT_RIGHT   - Right Shift
+MOD_GUI_LEFT      - Windows Key
+MOD_GUI_RIGHT     - Menu Key
+</textarea>
       </div>
     </div>
     <script src="script.js"></script>

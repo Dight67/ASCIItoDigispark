@@ -4,7 +4,7 @@
   margin: 0;
 }
 ::placeholder{
-    color: rgba(0, 0, 0, 1);
+    color: hsl(30, 50%, 50%);
 }
 body {
   color: hsl(30, 50%, 50%);
@@ -26,6 +26,30 @@ body {
   display: flex;
   width: 80em;
 }
+.buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+.cheatsheet{
+  display: flex;
+  height: auto;
+  color: hsl(30, 50%, 50%);
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(58, 55, 51);
+  border: rgb(22, 21, 22) solid 0.2em;
+  height: 100%;
+  width: 24em;
+  padding-top: 0.35em;
+  border-radius: 0.4em;
+  transition: 0.2s;
+  overflow-y: hidden;
+}
+.cheatsheet-text{
+  padding: 0 0 0 0.75em;
+  align-self: flex-start;
+  font-family: "Courier New", Courier, monospace;
+}
 .textareas {
   width: 70%;
   display: flex;
@@ -33,6 +57,7 @@ body {
   margin: 2em 2em 2em 2em;
 }
 textarea {
+  color: hsl(30, 50%, 50%);
   background-color: rgb(58, 55, 51);
   border: rgb(22, 21, 22) solid 0.25em;
   border-radius: 0.5em;
@@ -40,6 +65,7 @@ textarea {
   resize: none;
   outline: none;
   padding: 0.5em;
+  padding-top: 0.35em;
 }
 .text-0-span {
   font-family: "Courier New", Courier, monospace;
@@ -75,11 +101,12 @@ textarea {
   font-size: 2em;
   background-color: rgb(58, 55, 51);
   border: rgb(22, 21, 22) solid 0.1em;
-  height: 1.54em;
+  height: 2.025em;
   width: 12em;
   padding: 0 0.5em 0 0.5em;
   border-radius: 0.2em;
   transition: 0.2s;
+  cursor: pointer;
 }
 .button:hover {
     background-color: rgb(78, 61, 38);
